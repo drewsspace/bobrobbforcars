@@ -15,6 +15,13 @@
 </head>
 <body>
 
+<!-- CUSTOM CURSOR -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <span class="cursor-label" id="cursorLabel"></span>
+</div>
+
 <!-- SCROLL PROGRESS BAR -->
 <div class="scroll-progress" id="scrollProgress"></div>
 
@@ -30,10 +37,19 @@
 
 <!-- LOADING SCREEN -->
 <div class="loader" id="loader">
-  <div class="loader-mark">
-    <span class="loader-dot"></span>
-    <span class="loader-text">Bob Robb</span>
+  <div class="loader-bg" id="loaderBg"></div>
+  <div class="loader-content">
+    <div class="loader-mark">
+      <span class="loader-dot"></span>
+      <span class="loader-text">Bob Robb</span>
+    </div>
+    <div class="loader-progress">
+      <div class="loader-progress-track"><span id="loaderBar"></span></div>
+      <div class="loader-progress-num"><span id="loaderNum">0</span><em>%</em></div>
+    </div>
   </div>
+  <div class="loader-slab loader-slab--top"></div>
+  <div class="loader-slab loader-slab--bottom"></div>
 </div>
 
 <!-- NAVIGATION -->
@@ -68,19 +84,20 @@
 </div>
 
 <!-- HERO -->
-<section class="hero" id="hero">
-  <div class="hero-bg">
+<section class="hero" id="hero" data-cursor-spotlight>
+  <div class="hero-bg" data-parallax data-parallax-speed="0.18">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/25_Cadillac_Escalade_IQ_Luxury_1.jpg/1920px-25_Cadillac_Escalade_IQ_Luxury_1.jpg" alt="" class="hero-bg-img">
     <div class="hero-overlay"></div>
+    <div class="hero-spotlight" id="heroSpotlight"></div>
     <div class="hero-grain"></div>
   </div>
   <div class="hero-content">
     <div class="hero-eyebrow" data-split-words>Personal Automotive Concierge</div>
-    <h1 class="hero-h1"><span class="hero-line" data-split-words>The car you want.</span><span class="hero-line hero-line--em" data-split-words>Already arranged.</span></h1>
+    <h1 class="hero-h1"><span class="hero-line" data-split-letters>The car you want.</span><span class="hero-line hero-line--em" data-split-letters>Already arranged.</span></h1>
     <p class="hero-sub" data-split-words>Any make. Any model. Sourced personally from a four-decade network of dealer relationships &mdash; delivered on your terms.</p>
     <div class="hero-ctas reveal">
-      <a href="#contact" class="btn btn-primary magnetic"><span>Start a Conversation</span></a>
-      <a href="tel:+12485543591" class="btn btn-ghost magnetic"><span>Call (248) 554&ndash;3591</span></a>
+      <a href="#contact" class="btn btn-primary magnetic" data-cursor="start"><span>Start a Conversation</span></a>
+      <a href="tel:+12485543591" class="btn btn-ghost magnetic" data-cursor="call"><span>Call (248) 554&ndash;3591</span></a>
     </div>
   </div>
   <div class="hero-scroll">
@@ -97,7 +114,7 @@
       Not a dealership. <em>A concierge.</em>
     </h2>
     <div class="approach-grid">
-      <p class="approach-lede reveal">
+      <p class="approach-lede reveal" data-reveal-words>
         Buying a car should feel as considered as the car itself. Bob works for you &mdash; not the lot. One conversation replaces a month of showrooms, spreadsheets, and sales pitches.
       </p>
       <div class="approach-stats">
@@ -188,32 +205,32 @@
     <h2 class="section-headline reveal">Whatever the vehicle, whatever the terms.</h2>
 
     <div class="services-grid">
-      <div class="service-card reveal">
+      <div class="service-card reveal" data-tilt>
         <div class="service-num">I.</div>
         <h3>New Vehicles</h3>
         <p>Every major domestic and import brand. Factory orders, allocations, hard&#8209;to&#8209;find trims &mdash; handled through established dealer partners.</p>
       </div>
-      <div class="service-card reveal">
+      <div class="service-card reveal" data-tilt>
         <div class="service-num">II.</div>
         <h3>Pre&#8209;Owned</h3>
         <p>Inspected, verified, and matched to your specification. Certified pre&#8209;owned through cultivated collectibles.</p>
       </div>
-      <div class="service-card reveal">
+      <div class="service-card reveal" data-tilt>
         <div class="service-num">III.</div>
         <h3>Lease Strategy</h3>
         <p>Multi&#8209;manufacturer comparison on incentives, residuals, and money factor. The right lease is rarely the first one quoted.</p>
       </div>
-      <div class="service-card reveal">
+      <div class="service-card reveal" data-tilt>
         <div class="service-num">IV.</div>
         <h3>Trade&#8209;In &amp; Consignment</h3>
         <p>A private&#8209;market appraisal on your current vehicle, with multiple outlets bid against one another to maximize value.</p>
       </div>
-      <div class="service-card reveal">
+      <div class="service-card reveal" data-tilt>
         <div class="service-num">V.</div>
         <h3>Nationwide Delivery</h3>
         <p>Home base is Metro Detroit. Reach is national &mdash; enclosed transport coordinated door&#8209;to&#8209;door anywhere in the US.</p>
       </div>
-      <div class="service-card reveal">
+      <div class="service-card reveal" data-tilt>
         <div class="service-num">VI.</div>
         <h3>Family &amp; Fleet</h3>
         <p>From a teenager&rsquo;s first car to a household fleet refresh. One relationship, every vehicle in the driveway.</p>
@@ -267,7 +284,7 @@
 <section id="about" class="section-pad about">
   <div class="about-inner">
     <div class="about-visual reveal">
-      <div class="about-portrait" data-portrait-reveal>
+      <div class="about-portrait" data-portrait-reveal data-cursor="view">
         <img src="assets/bob-robb.png" alt="Bob Robb portrait">
       </div>
       <div class="about-caption">Bob Robb &middot; Troy, Michigan</div>
@@ -275,13 +292,13 @@
     <div class="about-copy">
       <div class="section-eyebrow reveal">About Bob</div>
       <h2 class="reveal">A career built on <em>handshakes.</em></h2>
-      <p class="reveal">
+      <p class="reveal" data-reveal-words>
         Bob Robb has spent more than forty years on the automotive side of the table &mdash; first as a salesman, then a leasing specialist, now as the person his clients send their families, their neighbors, and their companies to.
       </p>
-      <p class="reveal">
+      <p class="reveal" data-reveal-words>
         His home base is Suburban Cadillac Buick at the Troy Motor Mall, the flagship of the Suburban Collection. That tenure is the quiet foundation of the broker practice: four decades of trust, a rolodex of sales managers at dealerships from Michigan to the coasts, and the professional credibility to move a transaction through any brand, in any state, quickly and without drama.
       </p>
-      <p class="reveal">
+      <p class="reveal" data-reveal-words>
         What clients hire Bob for isn&rsquo;t access &mdash; the internet has democratized that. They hire him for judgment. Which model is actually worth the premium. Which trim will hold value. Which dealership will honor the deal after the ink dries. Those answers only come from forty years of watching it play out.
       </p>
       <div class="about-sig reveal">
