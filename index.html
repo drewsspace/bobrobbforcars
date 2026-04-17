@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bob Robb &mdash; Personal Automotive Concierge</title>
+<meta name="description" content="Four decades in the automotive industry. Any make, any model, sourced personally. A concierge car-buying service for discerning clients.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- LOADING SCREEN -->
+<div class="loader" id="loader">
+  <div class="loader-mark">
+    <span class="loader-dot"></span>
+    <span class="loader-text">Bob Robb</span>
+  </div>
+</div>
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">
+    <span class="nav-logo-mark">BR</span>
+    <span class="nav-logo-text">Bob Robb</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#approach">Approach</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="tel:+12485543591" class="nav-phone">(248) 554&ndash;3591</a>
+  <button class="nav-mobile-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#approach">Approach</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="tel:+12485543591" class="mobile-phone">(248) 554&ndash;3591</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=1920&q=80&auto=format&fit=crop" alt="" class="hero-bg-img">
+    <div class="hero-overlay"></div>
+    <div class="hero-grain"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-eyebrow reveal">Personal Automotive Concierge &middot; Est. 1985</div>
+    <h1 class="reveal">Four decades.<br><em>One phone call.</em></h1>
+    <p class="hero-sub reveal">Any make. Any model. Sourced personally from a four-decade network of dealer relationships across the country &mdash; delivered on your terms.</p>
+    <div class="hero-ctas reveal">
+      <a href="#contact" class="btn btn-primary"><span>Start a Conversation</span></a>
+      <a href="tel:+12485543591" class="btn btn-ghost"><span>Call (248) 554&ndash;3591</span></a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- APPROACH / POSITIONING -->
+<section id="approach" class="section-pad approach">
+  <div class="approach-inner">
+    <div class="section-eyebrow reveal">The Approach</div>
+    <h2 class="approach-headline reveal">
+      Not a dealership. <em>A concierge.</em>
+    </h2>
+    <div class="approach-grid">
+      <p class="approach-lede reveal">
+        Buying a car should feel as considered as the car itself. Bob works for you &mdash; not the lot. One conversation replaces a month of showrooms, spreadsheets, and sales pitches.
+      </p>
+      <div class="approach-stats">
+        <div class="stat reveal">
+          <div class="stat-num">40<span>+</span></div>
+          <div class="stat-label">Years in the industry</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat-num">50</div>
+          <div class="stat-label">States served</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Point of contact, start to finish</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="section-pad process">
+  <div class="process-inner">
+    <div class="section-eyebrow reveal">The Process</div>
+    <h2 class="section-headline reveal">Three steps. No showroom.</h2>
+
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <div class="step-num">01</div>
+        <div class="step-body">
+          <h3>Tell Bob what you want.</h3>
+          <p>Budget. Style. Must&#8209;haves. Timing. A 15&#8209;minute call covers everything &mdash; new or pre&#8209;owned, lease or purchase, any brand.</p>
+        </div>
+      </div>
+
+      <div class="process-step reveal">
+        <div class="step-num">02</div>
+        <div class="step-body">
+          <h3>He sources from his network.</h3>
+          <p>Decades of relationships with dealership sales reps across the country mean the right vehicle often isn&rsquo;t on a lot near you &mdash; but Bob knows who has it.</p>
+        </div>
+      </div>
+
+      <div class="process-step reveal">
+        <div class="step-num">03</div>
+        <div class="step-body">
+          <h3>You drive it home.</h3>
+          <p>Paperwork, trade&#8209;in, delivery, coordination &mdash; handled. Most clients spend less than an hour of their time on the entire transaction.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section-pad services">
+  <div class="services-inner">
+    <div class="section-eyebrow reveal">Services</div>
+    <h2 class="section-headline reveal">Whatever the vehicle, whatever the terms.</h2>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-num">I.</div>
+        <h3>New Vehicles</h3>
+        <p>Every major domestic and import brand. Factory orders, allocations, hard&#8209;to&#8209;find trims &mdash; handled through established dealer partners.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">II.</div>
+        <h3>Pre&#8209;Owned</h3>
+        <p>Inspected, verified, and matched to your specification. Certified pre&#8209;owned through cultivated collectibles.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">III.</div>
+        <h3>Lease Strategy</h3>
+        <p>Multi&#8209;manufacturer comparison on incentives, residuals, and money factor. The right lease is rarely the first one quoted.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">IV.</div>
+        <h3>Trade&#8209;In &amp; Consignment</h3>
+        <p>A private&#8209;market appraisal on your current vehicle, with multiple outlets bid against one another to maximize value.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">V.</div>
+        <h3>Nationwide Delivery</h3>
+        <p>Home base is Metro Detroit. Reach is national &mdash; enclosed transport coordinated door&#8209;to&#8209;door anywhere in the US.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">VI.</div>
+        <h3>Family &amp; Fleet</h3>
+        <p>From a teenager&rsquo;s first car to a household fleet refresh. One relationship, every vehicle in the driveway.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="section-pad testimonials">
+  <div class="testimonials-inner">
+    <div class="section-eyebrow reveal">In Their Words</div>
+    <h2 class="section-headline reveal">Clients who don&rsquo;t buy cars any other way.</h2>
+
+    <div class="testimonial-grid">
+      <figure class="testimonial reveal">
+        <blockquote>
+          &ldquo;I&rsquo;ve bought eight cars from Bob. Every time it feels less like a transaction and more like a favor from a friend who happens to be the best in the business.&rdquo;
+        </blockquote>
+        <figcaption>
+          <span class="t-name">Longtime Client</span>
+          <span class="t-meta">Bloomfield Hills, MI &middot; 8 vehicles</span>
+        </figcaption>
+      </figure>
+
+      <figure class="testimonial reveal">
+        <blockquote>
+          &ldquo;We wanted a specific trim that was sold out within 200 miles. Bob found it in two days, had it trucked to our driveway, and saved us the weekend we&rsquo;d planned to spend on dealership lots.&rdquo;
+        </blockquote>
+        <figcaption>
+          <span class="t-name">Family Client</span>
+          <span class="t-meta">Birmingham, MI &middot; New Escalade</span>
+        </figcaption>
+      </figure>
+
+      <figure class="testimonial reveal">
+        <blockquote>
+          &ldquo;Bob is who I call before I start looking. He listens, pushes back when I&rsquo;m wrong, and brings back three options instead of thirty.&rdquo;
+        </blockquote>
+        <figcaption>
+          <span class="t-name">Repeat Client</span>
+          <span class="t-meta">Naples, FL &middot; Out&#8209;of&#8209;state delivery</span>
+        </figcaption>
+      </figure>
+    </div>
+    <p class="testimonial-note reveal">References available on request.</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section-pad about">
+  <div class="about-inner">
+    <div class="about-visual reveal">
+      <!-- TODO: replace src below with Bob's portrait from the Suburban Cadillac staff page -->
+      <div class="about-portrait">
+        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=900&q=80&auto=format&fit=crop" alt="Bob Robb portrait">
+      </div>
+      <div class="about-caption">Bob Robb &middot; Troy, Michigan</div>
+    </div>
+    <div class="about-copy">
+      <div class="section-eyebrow reveal">About Bob</div>
+      <h2 class="reveal">A career built on <em>handshakes.</em></h2>
+      <p class="reveal">
+        Bob Robb has spent more than forty years on the automotive side of the table &mdash; first as a salesman, then a leasing specialist, now as the person his clients send their families, their neighbors, and their companies to.
+      </p>
+      <p class="reveal">
+        His home base is Suburban Cadillac Buick at the Troy Motor Mall, the flagship of the Suburban Collection. That tenure is the quiet foundation of the broker practice: four decades of trust, a rolodex of sales managers at dealerships from Michigan to the coasts, and the professional credibility to move a transaction through any brand, in any state, quickly and without drama.
+      </p>
+      <p class="reveal">
+        What clients hire Bob for isn&rsquo;t access &mdash; the internet has democratized that. They hire him for judgment. Which model is actually worth the premium. Which trim will hold value. Which dealership will honor the deal after the ink dries. Those answers only come from forty years of watching it play out.
+      </p>
+      <div class="about-sig reveal">
+        <div class="sig-name">Bob Robb</div>
+        <div class="sig-title">Personal Automotive Concierge</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section-pad contact">
+  <div class="contact-inner">
+    <div class="contact-copy">
+      <div class="section-eyebrow reveal">Start a Conversation</div>
+      <h2 class="reveal">Tell Bob about the car you&rsquo;re looking for.</h2>
+      <p class="reveal">A short note is all it takes. Most clients hear back within the same business day.</p>
+
+      <div class="contact-direct">
+        <div class="direct-item reveal">
+          <div class="direct-label">Direct line</div>
+          <a href="tel:+12485543591" class="direct-value">(248) 554&ndash;3591</a>
+        </div>
+        <div class="direct-item reveal">
+          <div class="direct-label">Email</div>
+          <a href="mailto:brobb@suburbancollection.com" class="direct-value">brobb@suburbancollection.com</a>
+        </div>
+        <div class="direct-item reveal">
+          <div class="direct-label">Home base</div>
+          <div class="direct-value">Suburban Cadillac Buick<br>Troy Motor Mall &middot; Troy, MI</div>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form reveal" id="contactForm" novalidate>
+      <div class="form-row">
+        <label class="field">
+          <span>Name</span>
+          <input type="text" name="name" required autocomplete="name">
+        </label>
+        <label class="field">
+          <span>Phone</span>
+          <input type="tel" name="phone" autocomplete="tel">
+        </label>
+      </div>
+      <label class="field">
+        <span>Email</span>
+        <input type="email" name="email" required autocomplete="email">
+      </label>
+      <div class="form-row">
+        <label class="field">
+          <span>Vehicle of interest</span>
+          <input type="text" name="vehicle" placeholder="Make, model, trim &mdash; or simply a style">
+        </label>
+        <label class="field">
+          <span>Timing</span>
+          <select name="timing">
+            <option value="">Select&hellip;</option>
+            <option>This month</option>
+            <option>Next 1&ndash;3 months</option>
+            <option>3&ndash;6 months</option>
+            <option>Exploring</option>
+          </select>
+        </label>
+      </div>
+      <label class="field">
+        <span>Budget &amp; notes</span>
+        <textarea name="notes" rows="4" placeholder="Anything Bob should know &mdash; trade-in, delivery location, must-haves."></textarea>
+      </label>
+      <button type="submit" class="btn btn-primary btn-block"><span>Send to Bob</span></button>
+      <p class="form-note">Your note opens in your mail app addressed to <a href="mailto:brobb@suburbancollection.com">brobb@suburbancollection.com</a>.</p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <span class="footer-logo-mark">BR</span>
+        <span class="footer-logo-text">Bob Robb <em>for cars</em></span>
+      </div>
+      <p class="footer-tag">Personal Automotive Concierge &middot; Troy, Michigan</p>
+    </div>
+    <div class="footer-meta">
+      <a href="tel:+12485543591">(248) 554&ndash;3591</a>
+      <a href="mailto:brobb@suburbancollection.com">brobb@suburbancollection.com</a>
+      <span>bobrobbforcars.com</span>
+    </div>
+    <div class="footer-fine">
+      &copy; <span id="year"></span> Bob Robb. Personal automotive concierge services. Vehicle transactions are executed through franchised, licensed dealer partners.
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
